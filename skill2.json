@@ -1,0 +1,30 @@
+import json
+data = {}
+data['people'] = []
+data['people'].append({
+    'name': 'Mohan',
+    'university': 'klh',
+    'from': 'Manikonda'
+})
+data['people'].append({
+    'name': 'Anitha',
+    'university': 'klh',
+    'from': 'kukatpally'
+})
+data['people'].append({
+    'name': 'Geeta',
+    'university': 'klu',
+    'from': 'jntu'
+})
+data['people'].append({
+    'name': 'Babu',
+    'university': 'klu',
+    'from': 'jbs'
+})
+data['people'].append({
+    'name': 'ABC',
+    'university': 'klh',
+    'from': 'xyz'
+})
+with open('data.txt', 'w') as outfile:
+    json.dump(data, outfile)
